@@ -15,7 +15,7 @@ public class GenerateRandomNumber {
 	private static int generate_Ran_Num(int n) {
 		// TODO Auto-generated method stub
 		Random numRandom= new Random();
-		return numRandom.nextInt(n+1);
+		return numRandom.nextInt(n);
 	}
 
 }
