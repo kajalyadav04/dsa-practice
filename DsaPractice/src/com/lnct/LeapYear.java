@@ -4,7 +4,7 @@ public class LeapYear {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int n = 200;
+		int n = 8;
 
 		boolean res = leapYrCheck(n);
 		System.out.println(res);
@@ -13,19 +13,22 @@ public class LeapYear {
 
 	private static boolean leapYrCheck(int n) {
 		// TODO Auto-generated method stub
-//		boolean flag = false;
+		boolean flag = false;
 		if (n % 4 == 0) {
 			if (n % 100 == 0) {
 				if (n % 400 == 0) {
-//					
-                 return true;
+				
+                 flag= true;
 				}
-				return false;
+				 
 			}
+//			else {
+				flag=true;
+//			}
 
-			return true;
+			
 		}
-		return false;
+		return flag;
 		
 
 	}
