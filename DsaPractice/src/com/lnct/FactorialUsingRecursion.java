@@ -8,7 +8,7 @@ public class FactorialUsingRecursion {
 		int fact=1;
 		factorialNumber(n,fact);
 		int ans = factorialNumberV2(n);
-		//5*fact(4)*fact(3)*fact(2)*
+		//5*fact(4)*fact(3)*fact(2)*fact(1)*1
 		System.out.println("factrial: "+ans);
 	}
 
