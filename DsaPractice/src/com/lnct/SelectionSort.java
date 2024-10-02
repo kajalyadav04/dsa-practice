@@ -6,7 +6,7 @@ public class SelectionSort {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int[] arr = { 36, 78, 23, 3, 2, 1, 65 };
+		int[] arr = { 36, 78, 23, 3, 2, 1, 65,23 };
 		int n = arr.length;
 		sortArray(arr, n);
 		System.out.println(Arrays.toString(arr));
