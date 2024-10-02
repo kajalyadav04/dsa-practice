@@ -17,7 +17,7 @@ public class SelectionSort {
 		// TODO Auto-generated method stub
 		for (int i = 0; i < arr.length - 1; i++) {
 			int max = i;
-			for (int j = i + 1; j < arr.length - 1; j++) {
+			for (int j = i + 1; j < arr.length; j++) {
 				if (arr[max] > arr[j]) {
 					max = j;
 				}
