@@ -19,7 +19,8 @@ public class HighestRepeatingStringInStringArr {
 			System.out.println(teams[i]);
 		}
 
-		highestRepeatingString(n, teams);
+//		
+		highestRepeatingStringUsingHashMap(n,teams);
 	}
 
 	public static void highestRepeatingString(int n, String[] teams) {
@@ -48,5 +49,23 @@ public class HighestRepeatingStringInStringArr {
 		}
 
 	}
+	public static void highestRepeatingStringUsingHashMap(int n,String[] teams){
+        Map<String,Integer> goalsCount= new HashMap<>();
+        for(String team:teams){
+            goalsCount.put(team, goalsCount.getOrDefault(team,0)+1);
+        }
+        String winner="";
+        int maxGoals=0;
+        for(String team:goalsCount.keySet()){
+            int goals=goalsCount.get(team);
+            if(goals>maxGoals){
+                maxGoals=goals;
+                winner=team;
+            }
+        }
+        
+        System.out.println("win"+winner);
+        
+    }
 
 }
