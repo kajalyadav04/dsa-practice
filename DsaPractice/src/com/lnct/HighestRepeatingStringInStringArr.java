@@ -64,7 +64,7 @@ public class HighestRepeatingStringInStringArr {
             }
         }
         
-        System.out.println("win"+winner);
+        System.out.println("win "+winner);
         
     }
 
