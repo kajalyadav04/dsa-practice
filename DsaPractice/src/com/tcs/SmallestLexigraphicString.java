@@ -1,6 +1,8 @@
 package com.tcs;
 
 import java.util.Scanner;
+import java.util.Set;
+import java.util.TreeSet;
 
 public class SmallestLexigraphicString {
 
@@ -11,11 +13,28 @@ public class SmallestLexigraphicString {
 //		for(int i=0;i<test;i++) {
 			String string="qwertyuiopasdfghjklzxcvbnm";
 			String strToFind= "plmko";
-			lexifn(string,strToFind);
+//			lexifn(string,strToFind);
+			lexigraphicfn(string,strToFind);
 			
 		}
 
 	
+
+	private static void lexigraphicfn(String string, String strToFind) {
+		// TODO Auto-generated method stub
+		Set<Character> characters = new TreeSet<>();
+		for(char ch:string.toCharArray()) {
+			characters.add(ch);
+		}
+		for(char ch:strToFind.toCharArray()) {
+			if(characters.contains(ch)) {
+				System.out.print(ch);
+			}
+		}
+		
+	}
+
+
 
 	private static void lexifn(String string, String strToFind) {
 		// TODO Auto-generated method stub
