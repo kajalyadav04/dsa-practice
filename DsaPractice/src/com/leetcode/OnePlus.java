@@ -4,15 +4,15 @@ public class OnePlus {
 	
 	    public int[] plusOne(int[] digits) {
 	       
-	        int k=digits.length;
-	        for(int i=k-1;i>=0;i--){
+	        int l=digits.length;
+	        for(int i=l-1;i>=0;i--){
 	            if(digits[i]<9){
 	                digits[i]++;
 	                return digits;
 	            }
 	                digits[i]=0;
 	        }
-	        int[] newNumber = new int[k+1];
+	        int[] newNumber = new int[l+1];
 	        newNumber[0]=1;
 	       
 	        return newNumber;
