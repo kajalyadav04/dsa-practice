@@ -9,6 +9,8 @@ public class ReverseStringGfgLogic {
 	    String s=sc.next();
 	    String r=reverseStr(s);
 	    System.out.println(r);
+	    String kString=reverseStringUsingtoCharArray(s);
+	    System.out.println(kString);
 	    }
 	    public static String reverseStr(String s){
 	        String newStr="";
@@ -17,6 +19,14 @@ public class ReverseStringGfgLogic {
 	            newStr=ch+newStr;
 	        }
 	        return newStr;
+	    }
+	    public static String reverseStringUsingtoCharArray(String str) {
+	    	char[] a=str.toCharArray();
+	        String s="";
+	        for(int i=a.length-1;i>=0;i--){
+	           s+=a[i];
+	        }
+	        return s;
 	    }
 
 }
