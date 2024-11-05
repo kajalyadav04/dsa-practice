@@ -10,7 +10,13 @@ public class RemoveVowel {
 	        String p= removeVowel(s);
 	        System.out.println(p);
 	        
-	    }
+	        String k= removeVr(s);
+	        System.out.println(k);
+	     }
+	     public static String removeVr(String s){
+	         return s.replaceAll("[aeiouAEIOU]","");
+	     }
+
 	    public static String removeVowel(String s){
 	         String newStr="";
 	        for(int i=0;i<s.length();i++){
