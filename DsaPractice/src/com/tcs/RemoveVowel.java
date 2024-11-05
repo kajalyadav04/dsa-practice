@@ -6,7 +6,7 @@ public class RemoveVowel {
 	
 	    public static void main(String args[]){
 	        Scanner sc=new Scanner(System.in);
-	        String s=sc.next();
+	        String s=sc.nextLine();
 	        String p= removeVowel(s);
 	        System.out.println(p);
 	        
