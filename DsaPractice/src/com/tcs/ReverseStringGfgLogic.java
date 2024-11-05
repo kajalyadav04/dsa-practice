@@ -28,5 +28,16 @@ public class ReverseStringGfgLogic {
 	        }
 	        return s;
 	    }
+	    public static String reverseStringUsingStringBuilder(String str){
+	        // char[] a=str.toCharArray();
+	        StringBuilder s= new StringBuilder();
+	        for(int i=str.length()-1;i>=0;i--){
+	            char ch=str.charAt(i);
+	            s.append(ch);
+	           
+	        }
+	        String k=s.toString();
+	        return k;
+	    }
 
 }
