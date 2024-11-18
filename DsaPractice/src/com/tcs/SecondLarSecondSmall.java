@@ -25,7 +25,15 @@ public class SecondLarSecondSmall {
 			else if(num>secLargest&&num!=largest) {
 				secLargest=num;
 			}
+			if(num<smallest) {
+				secsmallest=smallest;
+				smallest=num;
+				
+			}
+			
 		}
+		System.out.println(secsmallest);
+		System.out.println(smallest);
 		System.out.println(secLargest);
 		System.out.println(largest);
 		
