@@ -10,8 +10,8 @@ public class RemoveSpaces {
 		  System.out.println(r);
 		  String kString= removeS(str);
 		  System.out.println(kString);
+	}
 		    
-		}
 		public static String removeSpaces(String str){
 		    // char[] a=str.toCharArray();
 		    String s="";

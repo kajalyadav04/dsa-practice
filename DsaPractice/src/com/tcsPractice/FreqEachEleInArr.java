@@ -1,6 +1,6 @@
 package com.tcsPractice;
 
-import java.util.Scanner;
+import java.util.*;
 
 public class FreqEachEleInArr{
 
