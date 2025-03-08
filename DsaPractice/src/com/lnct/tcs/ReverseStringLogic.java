@@ -15,7 +15,7 @@ public class ReverseStringLogic {
 	private static String reverseStringUsingChatAt(String input) {
 		// TODO Auto-generated method stub
 		String reString="";
-		for(int i=0;i<input.length();i++) {
+		for(int i=input.length()-1;i>=0;i--) {
 			char ch=input.charAt(i);
 			reString+=ch;
 		}
@@ -26,8 +26,8 @@ public class ReverseStringLogic {
 		// TODO Auto-generated method stub
 		char[] arr= input.toCharArray();
 		String reString="";
-		for(int i=0;i<arr.length;i++) {
-			 reString+=arr[arr.length-i];
+		for(int i=arr.length-1;i>=0;i--) {
+			 reString+=arr[i];
 		}
 		return reString;
 	}
