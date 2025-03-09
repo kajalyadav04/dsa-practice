@@ -14,5 +14,15 @@ public class ReverseString {
 		return kStringBuilder.toString();
 		
 	}
+	public static String reverseStringUsingLogic(String s) {
+        // code here
+        StringBuilder k= new StringBuilder();
+        for(int i=s.length()-1;i>=0;i--){
+            char ch=s.charAt(i);
+            k.append(ch);
+            
+        }
+        return k.toString();
+    }
 
 }
