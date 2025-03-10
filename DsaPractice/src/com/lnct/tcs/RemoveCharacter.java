@@ -40,6 +40,7 @@ public class RemoveCharacter {
 	        char[] arr=s.toCharArray();
 	        int j=0;
 	        for(int i=0;i<arr.length;i++){
+//	        	if(Character.isLetter(arr[i])){
 	            if((arr[i]>='a'&&arr[i]<='z')||(arr[i]>='A'&&arr[i]<='Z')){
 	                arr[j]=arr[i];
 	                j++;

@@ -33,7 +33,7 @@ public class RemoveVowel {
 	        StringBuilder str = new StringBuilder();
 	        for(int i=0;i<s.length();i++){
 	            char ch=s.charAt(i);
-	            if("aeiou".indexOf(ch)!=-1){
+	            if("aeiouAEIOU".indexOf(ch)!=-1){
 	                continue;
 	            }
 	            else {
@@ -44,6 +44,28 @@ public class RemoveVowel {
 	        }
 	        return str.toString();
 	    }
+	  public static String removeVowelsUsingLogic(String s) {
+	        // code here
+	        StringBuilder str = new StringBuilder();
+	        for(int i=0;i<s.length();i++){
+	            char ch=s.charAt(i);
+	            if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u'||ch=='A'||ch=='E'||ch=='I'||ch=='O'||ch=='U'){
+	                continue;
+	            }
+	            else {
+	                str.append(ch);
+	            }
+	            
+	            
+	        }
+	        return str.toString();
+	    
+	  }
+	  public static String removeVr(String s){
+	        return s.replaceAll("[aeiouAEIOU]","" );
+	     }
+
+	  
 	
 
 }
