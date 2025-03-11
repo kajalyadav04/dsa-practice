@@ -48,18 +48,21 @@ public class RemoveBrackets {
 	}
 	public static String  removeBracket(String s) {
 		char[] arr= s.toCharArray();
-		StringBuilder kBuilder=new StringBuilder();
+//		StringBuilder kBuilder=new StringBuilder();
+		int j=0;
 		for(int i=0;i<arr.length;i++) {
 			
 			if(arr[i]=='('||arr[i]==')'||arr[i]=='{'||arr[i]=='}'||arr[i]=='['||arr[i]==']') {
 				continue;
 			}
 			else {
-				kBuilder.append(arr[i]);
+				
+				arr[j++]=arr[i];
 			}
 		}
+		String kString=new String(arr,0,j);
 		
-		return kBuilder.toString();
+		return kString;
 		
 	}
 }
