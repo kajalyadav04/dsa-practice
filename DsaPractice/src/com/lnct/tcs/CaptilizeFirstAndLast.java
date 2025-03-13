@@ -5,7 +5,7 @@ public class CaptilizeFirstAndLast {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		String str ="anjali";
-		String kString= capFn(str);
+		String kString= capitilize(str);
 		System.out.println(kString);
 
 	}
@@ -22,6 +22,10 @@ public class CaptilizeFirstAndLast {
 		}
 		
 		return Character.toUpperCase(str.charAt(0))+str.substring(1,len-1)+Character.toUpperCase(str.charAt(len-1));
+	}
+	public static  String capitilize(String s) {
+		int len=s.length();
+		return s.substring(0,1).toUpperCase()+s.substring(1,len-1)+s.substring(len-1).toUpperCase();
 	}
 
 }
