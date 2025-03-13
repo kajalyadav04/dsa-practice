@@ -28,4 +28,27 @@ public class SumOfNumberInString {
         return sum;
     }
 
+
+public static int findSumUsingLogic(String s) {
+    // your code here
+    int num=0;
+    int sum=0;
+    for(int i=0;i<s.length();i++){
+        char ch=s.charAt(i);
+        
+        if(Character.isDigit(ch)){
+            num=num*10+(ch-'0');
+            // sum=sum+num;
+        }
+        else{
+              sum=sum+num;
+            // if(!ch.equals('')){
+                num=0;
+            
+        }
+        
+    }
+    sum+=num;
+    return sum;
+}
 }
