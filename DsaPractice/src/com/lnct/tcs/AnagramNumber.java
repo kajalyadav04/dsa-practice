@@ -8,13 +8,44 @@ public class AnagramNumber {
 		Scanner sc =  new Scanner(System.in);
 		int n1=sc.nextInt();
 		int n2=sc.nextInt();
-		boolean k=	anagramNumUsingString(n1,n2);
+		boolean k=	anagramUsingSumandProduct(n1,n2);
 		if(k) {
 			System.out.println("true");
 		}
 		else {
 			System.out.println("false");
 		}
+	}
+	public static boolean anagramUsingSumandProduct(int n1,int n2) {
+		int sum1=0;
+		
+		int sum2=0;
+		int product1=1;
+		int product2=1;
+		while(n1>0) {
+			int rem=n1%10;
+			sum1+=rem;
+			product1*=rem;
+			n1=n1/10;
+		}
+		while(n2>0) {
+			int rem=n2%10;
+			sum2+=rem;
+			product2*=rem;
+			n2=n2/10;
+		}
+		if(n1!=0 || n2!=0) {
+			return false;
+		}else {
+			if(sum1==sum2&&product1==product2) {
+				return true;
+			}
+		}
+		
+		
+		
+		return false;
+		
 	}
 	public static boolean anagramNumUsingString(int n1,int n2) {
 		String s = String.valueOf(n1);
@@ -53,7 +84,7 @@ public class AnagramNumber {
 			}
 		}
 			
-			
+				
 			
 		return true;
 		
