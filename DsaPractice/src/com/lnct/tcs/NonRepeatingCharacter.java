@@ -1,6 +1,8 @@
 package com.lnct.tcs;
 
 import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.Map;
 
 public class NonRepeatingCharacter {
 
@@ -31,6 +33,23 @@ public class NonRepeatingCharacter {
 		}
 		return '$';
 	}
+	static char nonRepeatingCharUsingAnotherApproch(String s) {
+        // code here
+        Map<Character,Integer> eMap = new  LinkedHashMap<>();
+        for(char ch:s.toCharArray()){
+            eMap.put(ch,eMap.getOrDefault(ch,0)+1);
+            
+        }
+        for(Map.Entry<Character,Integer> a: eMap.entrySet()){
+            if(a.getValue()==1){
+                return a.getKey();
+                
+            }
+        }
+        return '$';
+        
+        
+    }
 	
 	
 
