@@ -25,6 +25,7 @@ public class AnagramStringLeetcode {
 	        for(int i=0;i<s.length();i++){
 
 	            count[s.charAt(i)-'a']++;
+//	            count[s.charAt(i)-97]++;
 	        }
 	         for(int i=0;i<t.length();i++){
 
